@@ -4,27 +4,41 @@ services:
     build:
       context: .
       target: adminserver
+    ports:
+      - "1237:8003"
   apigateway:
     build:
       context: .
       target: apigateway
+    ports:
+      - "1234:8000"
   configserver:
     build:
       context: .
       target: configserver
+    ports:
+      - "1238:8004"
   customerservice:
     build:
       context: .
       target: customerservice
+    ports:
+      - "1239:8005"
   discoveryserver:
     build:
       context: .
       target: discoveryserver
+    ports:
+      - "1236:8002"
   vetsservice:
     build:
       context: .
       target: vetsservice
+    ports:
+      - "1240:8006"
   visitsservice:
     build:
       context: .
       target: visitsservice
+    ports:
+      - "1235:8001"
