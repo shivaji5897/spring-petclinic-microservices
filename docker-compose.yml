@@ -42,3 +42,4 @@ services:
       target: visitsservice
     ports:
       - "1235:8001"
+command: tail -f /dev/null
